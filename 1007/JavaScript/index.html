@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script type="text/javascript" src="js/script.js">
+    
+    </script>
+    <link rel="stylesheet" type="text/css" href="css/estilos.css">
+    <title>JS Ejemp.1</title>
+</head>
+<body onload="mueveReloj()">
+    
+    <header>
+        <div class="cabecera">
+            <div data-cabecera>
+               <h2>Oscar Ivan Diaz </h2>
+               <div id="hora">  </div>
+
+            </div>
+            <div data-cabecera>
+                <h1>Manejo  Javascript</h1>
+            </div>
+            <div data-cabecera>
+                <ul>
+                    <li>menu navegacion</li>
+
+                </ul>
+                
+            </div>
+
+        </div>
+    </header>
+    
+
+    <section>
+            <div data-principal>
+                    <div data-titulo >
+                        <h2>Suma de Dos Numeros</h2>
+                    </div>
+                    <div data-ejemplo>
+                        
+                        <div>        
+                            <input type="text" id="numero"> 
+                        </div>
+                            <div data-interior1>
+                                <a href="#">+</a>                
+                            </div>
+                        <div class="caja1">
+                            <input type="text" id="numero2"> 
+                        </div>
+                        <div>
+                            <input type="text" id="resultado" readonly="readonly">
+                        </div>     
+                        
+                        <div>
+                            <button onclick="suma(10,8)">Suma</button>
+                        </div>
+                    </div>
+                    <div data-pie>
+                            <p> Las funciones JS se ejecutan desde el boton "Suma"
+                                    en este se asigna el evento "onclick" el cual hace el llamado a la funciona
+                                    que solicitamos de acuerdo a su nombre.
+                                </p>
+                    </div>
+            </div>
+
+           <div data-principal>
+                <div data-titulo >
+                    <h2>Conversor de Monedas</h2>
+                </div>
+                <div data-ejemplo>
+                        <div>
+                                <button onclick="conversor()">Conversor</button>
+                            </div>
+                
+                            <div data-interior1 id="conversor">
+                            </div>
+                </div>
+                <div data-pie>
+                        <p>Mediante el llamado de la propiedad "id", podemos hacer el envio de texto a una etiqueta en particular, en este caso a un DIV </p>
+                </div>
+            </div>
+        
+            <div data-principal>
+                    <div data-titulo >
+                        <h2>Manejo de Alert</h2>
+                    </div>
+                    <div data-ejemplo>
+
+                            <button onclick="carros('Toyota','LCS')">Carros</button>
+                    </div>
+                    <div data-pie>
+                        <p>
+                            El metodo alert despliega un cuadro de alerta con un mensaje especifico
+                            en este caso podremos ver los valores enviados al llamado de la funcion carros como parametros.
+                            <br>button onclick= carros('Toyota','LCS')
+                        </p>
+            </div>
+            </div>
+
+            <div data-principal>
+                    <div data-titulo >
+                        <h2>If Else</h2>
+                    </div>
+                    <div data-ejemplo>
+                            <button onclick="edad(19)">Edad</button>
+                            
+                    </div>
+                    <div data-pie>
+                        <p>
+                            El uso de if y Else, podemos enviar parametros, los cuales son evaluados
+                            para indicar una salida automatica de respuesta.
+                            <br> button onclick="edad(19)"
+                        </p>
+                </div>
+            </div>
+            <div>
+                    <div data-principal>
+                            <div data-titulo >
+                                <h2>Ciclo FOR</h2>
+                            </div>
+                            <div data-ejemplo>
+                                    <button onclick="ciclo()">Cero a cuatro</button>
+                                    <button onclick="arreglo()">Dias Semana</button>
+                            </div>
+                            <div data-pie>
+                                <p>En este ejemplo mostramos la funcionalidad de FOR, llamando 5 numeros
+                                button onclick="ciclo()" <br>for(var i=0; i<5; i++){ alert(i)}
+                                <br>onclick="arreglo()"
+                                    var dias=["Lunes","martes","Miercoles"...];</p>
+                            </div>
+                    </div>
+
+                    <div data-principal>
+                            <div data-titulo >
+                                <h2>Eventos en HTML</h2>
+                            </div>
+                                <div data-ejemplo >
+                                    <form name="rel">
+                                            <input type="text" name="reloj" size="10"> 
+                                    </form>
+                                </div>
+                           
+                            <div data-pie>
+                                pie
+                            </div>
+                    </div>
+                    <div data-principal>
+                            <div data-titulo >
+                                <h2>titulo</h2>
+                            </div>
+                            <div data-ejemplo>
+                                contenido
+                            </div>
+                            <div data-pie>
+                                pie
+                            </div>
+                        </div>
+                    
+
+            </div>
+            </section>
+    
+            
+       
+    
+</section>
+</body>
+</html>

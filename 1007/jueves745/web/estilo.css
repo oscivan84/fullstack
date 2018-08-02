@@ -1,0 +1,30 @@
+body { background-color : gray;
+
+     }
+
+p    { animation-duration: 8s;
+      animation-name: slidein;
+      animation-iteration-count:infinite;
+      animation-direction:alternate;
+
+
+     }
+
+
+@keyFrames slidein{
+
+    From{ margin-left: 100%;
+          width: 300%;
+   
+        }
+
+to { margin-left: 0%;
+          width: 100%;
+   
+   }
+
+}
+div{ width: 1000000px;
+     height: 50px;
+     background:white;
+}

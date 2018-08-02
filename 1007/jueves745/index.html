@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+  	<script type="text/javascript">
+  		function sumar(){
+  			if (formulario.signo.value==1) {
+  				var num1=formulario.num1.value;
+  				var num2=formulario.num2.value;
+  				var resultado=parseInt(num1)+parseInt(num2);
+  			}
+  			if (formulario.signo.value==2) {
+  				var num1=formulario.num1.value;
+  				var num2=formulario.num2.value;
+  				var resultado=parseInt(num1)-parseInt(num2);
+  			}
+  			if (formulario.signo.value==3) {
+  				var num1=formulario.num1.value;
+  				var num2=formulario.num2.value;
+  				var resultado=parseInt(num1)*parseInt(num2);
+  			}
+  			if (formulario.signo.value==4) {
+  				var num1=formulario.num1.value;
+  				var num2=formulario.num2.value;
+  				var resultado=parseInt(num1)/parseInt(num2);
+  			}
+  			formulario.result.value=resultado;
+  		}
+
+  	</script>
+  	<link rel="stylesheet" href="css.css">
+    <meta charset="utf-8"> 
+  </head>
+  <body>
+  	<h1>Oscar Diaz</h1> <h3>Uso de las etiquetas "h" para hacer uso de las caractiristicas de titulo.</h3><p> Se pueden Usar desde la H1  hasta la h6, con orden de importancia de H1 en mayor tamaño a H6 de tamaño mas pequeño pero de tipo titulo; diferenciandolo de la etiqueta "p" Parrafo con la cual se consiguen escribir textos de forma normal. con efectos de Parrafo </p>
+
+  	<hr><h2>Uso de las etiquetas DIV</h2>
+  	<div class="cuadro" style="height=90%">okcuadro</div>
+  	<p>Son usadas para diferenciar bloques de codigo en los cuales se pueden ejecutar funciones especificas, div trabaja con los atributos id - define una id para hacer referencia el div vía j<a href="https://www.w3schools.com/js/default.asp"> avascript</a>
+    title - muestra un titulo del elemento
+    style - define estilo vía CSS inline
+    height - altura del div. Es recomendable usar CSS
+    width - ancho del div. Es recomendable usa CSS</p>
+	  	<ol >
+		  <li>Uno</li>
+		  <li>Dos</li>
+		  <li>tres</li>
+		</ol>  
+		<ul class="navbar">
+		  <li>uno</li>
+		  <li>dos</li>
+		  <li><a href="https://www.w3schools.com/html/default.asp">Manual HTML</a></li>
+		</ul>  	
+<p>Lo más normal es apoyarnos en el lenguaje HTML para definir el tamaño de una imagen. Si bien, otra alternativa es utilizar estilos CSS para definir el alto y ancho de una imagen.
+
+En este caso podemos definir una clase CSS, la cual aplicaremos dependiendo de las necesidades.
+
+Utilizaremos los atributos width y height, de igual manera que los utiliza el lenguaje HTML con la etiqueta IMG, pero en este caso los asignaremos a una clase.
+
+Para ello generaremos el siguiente código:<a href="http://lineadecodigo.com/css/definir-el-tamano-de-una-imagen-con-css/"> Ejemplo uso de Tamaños</a></p>
+	<form name="formulario">
+		<input type="text" name="num1" value="">
+
+		<select name="signo">
+			<option value="1"> +</option>
+			<option value="2"> -</option>
+			<option value="3"> *</option>
+			<option value="4"> /</option>
+		</select>
+		<input type="text" name="num2" value=""><br>
+		<input type="text" name="result" value="">
+		<br>
+		<input type="button" onclick="sumar()" value="resultado">
+
+	</form>	
+
+  </body>
+</html>

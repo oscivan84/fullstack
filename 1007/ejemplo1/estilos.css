@@ -1,0 +1,16 @@
+.muestra{
+    height: 300px;
+    width: 400px;
+    background: #ff9;
+}
+.anterior{
+    height:100px ;
+    width: 200px;
+    float: left;
+    background-color: #CFC
+}
+.posterior{
+    height: 50px;
+    width: 80%;
+    background-color: #CCF;
+}

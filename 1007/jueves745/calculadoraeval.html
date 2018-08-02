@@ -1,0 +1,32 @@
+<html>
+<head>
+	<title> Calculadora Basica</title>
+	<h1> Calculadora</h1>
+</head>
+<!-- Empieza codigo calculadora html-->
+  <form name="calculadora">
+    <p>Haz algun calculo para ver el resultado.</p>
+    <input type="textfield" name="valor" value="" disabled>
+    <br>
+    <input type="button" value="1" onClick="calculadora.valor.value+='1'">
+    <input type="button" value="2" onClick="calculadora.valor.value+='2'">
+    <input type="button" value="3" onClick="calculadora.valor.value+='3'">
+    <input type="button" value="+" onClick="calculadora.valor.value+='+'">
+    <br>
+    <input type="button" value="4" onClick="calculadora.valor.value+='4'">
+    <input type="button" value="5" onClick="calculadora.valor.value+='5'">
+    <input type="button" value="6" onClick="calculadora.valor.value+='6'">
+    <input type="button" value="-" onClick="calculadora.valor.value+='-'">
+    <br>
+    <input type="button" value="7" onClick="calculadora.valor.value+='7'">
+    <input type="button" value="8" onClick="calculadora.valor.value+='8'">
+    <input type="button" value="9" onClick="calculadora.valor.value+='9'">
+    <input type="button" value="*" onClick="calculadora.valor.value+='*'">
+    <br>
+    <input type="button" value="0" onClick="calculadora.valor.value+='0'">
+    <input type="reset" value="c">
+    <input type="button" value="/" onClick="calculadora.valor.value+='/'">
+    <input type="button" value="=" onClick="calculadora.valor.value=eval(calculadora.valor.value)">
+    </form>
+<!-- Finaliza codigo calculadora html -->
+</html>

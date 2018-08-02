@@ -1,0 +1,143 @@
+<html>
+<head>
+	<title> Calculadora Basica</title>
+	<h1> Calculadora</h1>
+	<script>
+	function calcular(){
+		<!-- convertimos la cadena de caracteres del la caja de texto en un vector-->
+		nvector=calculadora.valor.value.split(" ");
+		<!-- verificamos que la posision 1 del vector sea un signo mas (+)-->
+		for(i=0;nvect.length>=1;i++){
+		if (nvector[1]=='+'){
+			var rta=parseInt(nvector[0])+parseInt(nvector[2]);
+			if(nvector[3]=='+'){
+				var rta=parseInt(nvector[0])+parseInt(nvector[2]);
+			}
+		}
+		<!-- verificamos que la posision 1 del vector sea un signo menos (-)-->
+		if (nvector[1]=='-'){
+			var rta=parseInt(nvector[0])-parseInt(nvector[2]);
+		}
+		<!-- verificamos que la posision 1 del vector sea un signo por (*)-->
+		if (nvector[1]=='*'){
+			var rta=parseInt(nvector[0])*parseInt(nvector[2]);
+		}
+		<!-- verificamos que la posision 1 del vector sea un signo division (/)-->
+		if (nvector[1]=='/'){
+			var rta=parseInt(nvector[0])/parseInt(nvector[2]);
+		}
+	<!-- Devolvemos el resultado a la caja de texto-->
+	<!-- calculadora.valor.value=rta; -->
+
+
+	<!-- convertimos la cadena de caracteres del la caja de texto en un vector-->
+		nvector=calculadora.valor.value.split(" ");
+		<!-- verificamos que la posision 1 del vector sea un signo mas (+)-->
+		if (nvector[3]=='+'){
+			var rta=parseInt(rta)+parseInt(nvector[4]);
+		}
+		<!-- verificamos que la posision 1 del vector sea un signo menos (-)-->
+		if (nvector[3]=='-'){
+			var rta=parseInt(rta)-parseInt(nvector[4]);
+		}
+		<!-- verificamos que la posision 1 del vector sea un signo por (*)-->
+		if (nvector[3]=='*'){
+			var rta=parseInt(rta)*parseInt(nvector[4]);
+		}
+		<!-- verificamos que la posision 1 del vector sea un signo division (/)-->
+		if (nvector[3]=='/'){
+			var rta=parseInt(rta)/parseInt(nvector[4]);
+		}
+
+}
+
+		<!-- convertimos la cadena de caracteres del la caja de texto en un vector-->
+		nvector=calculadora.valor.value.split(" ");
+		<!-- verificamos que la posision 1 del vector sea un signo mas (+)-->
+		if (nvector[5]=='+'){
+			var rta=parseInt(rta)+parseInt(nvector[6]);
+		}
+		<!-- verificamos que la posision 1 del vector sea un signo menos (-)-->
+		if (nvector[5]=='-'){
+			var rta=parseInt(rta)-parseInt(nvector[6]);
+		}
+		<!-- verificamos que la posision 1 del vector sea un signo por (*)-->
+		if (nvector[5]=='*'){
+			var rta=parseInt(rta)*parseInt(nvector[6]);
+		}
+		<!-- verificamos que la posision 1 del vector sea un signo division (/)-->
+		if (nvector[5]=='/'){
+			var rta=parseInt(rta)/parseInt(nvector[6]);
+		}
+
+
+
+		<!-- convertimos la cadena de caracteres del la caja de texto en un vector-->
+		nvector=calculadora.valor.value.split(" ");
+		<!-- verificamos que la posision 1 del vector sea un signo mas (+)-->
+		if (nvector[7]=='+'){
+			var rta=parseInt(rta)+parseInt(nvector[8]);
+		}
+		<!-- verificamos que la posision 1 del vector sea un signo menos (-)-->
+		if (nvector[7]=='-'){
+			var rta=parseInt(rta)-parseInt(nvector[8]);
+		}
+		<!-- verificamos que la posision 1 del vector sea un signo por (*)-->
+		if (nvector[7]=='*'){
+			var rta=parseInt(rta)*parseInt(nvector[8]);
+		}
+		<!-- verificamos que la posision 1 del vector sea un signo division (/)-->
+		if (nvector[7]=='/'){
+			var rta=parseInt(rta)/parseInt(nvector[8]);
+		}
+
+		<!-- convertimos la cadena de caracteres del la caja de texto en un vector-->
+		nvector=calculadora.valor.value.split(" ");
+		<!-- verificamos que la posision 1 del vector sea un signo mas (+)-->
+		if (nvector[9]=='+'){
+			var rta=parseInt(rta)+parseInt(nvector[10]);
+		}
+		<!-- verificamos que la posision 1 del vector sea un signo menos (-)-->
+		if (nvector[9]=='-'){
+			var rta=parseInt(rta)-parseInt(nvector[10]);
+		}
+		<!-- verificamos que la posision 1 del vector sea un signo por (*)-->
+		if (nvector[9]=='*'){
+			var rta=parseInt(rta)*parseInt(nvector[10]);
+		}
+		<!-- verificamos que la posision 1 del vector sea un signo division (/)-->
+		if (nvector[9]=='/'){
+			var rta=parseInt(rta)/parseInt(nvector[10]);
+		}
+
+	<!-- Devolvemos el resultado a la caja de texto-->
+	calculadora.valor.value=rta;
+	}
+	</script>
+</head>
+<!-- Empieza codigo calculadora html-->
+  <form name="calculadora">
+    <p>Haz algun calculo para ver el resultado.</p>
+    <input type="textfield" name="valor" value="" disabled>
+    <br>
+    <input type="button" value="1" onClick="calculadora.valor.value+='1'">
+    <input type="button" value="2" onClick="calculadora.valor.value+='2'">
+    <input type="button" value="3" onClick="calculadora.valor.value+='3'">
+    <input type="button" value="+" onClick="calculadora.valor.value+=' + '">
+    <br>
+    <input type="button" value="4" onClick="calculadora.valor.value+='4'">
+    <input type="button" value="5" onClick="calculadora.valor.value+='5'">
+    <input type="button" value="6" onClick="calculadora.valor.value+='6'">
+    <input type="button" value="-" onClick="calculadora.valor.value+=' - '">
+    <br>
+    <input type="button" value="7" onClick="calculadora.valor.value+='7'">
+    <input type="button" value="8" onClick="calculadora.valor.value+='8'">
+    <input type="button" value="9" onClick="calculadora.valor.value+='9'">
+    <input type="button" value="*" onClick="calculadora.valor.value+=' * '">
+    <br>
+    <input type="button" value="0" onClick="calculadora.valor.value+='0'">
+    <input type="reset" value="c">
+    <input type="button" value="=" onClick="calcular()">
+    <input type="button" value="/" onClick="calculadora.valor.value+=' / '">
+    </form>
+<!-- Finaliza codigo calculadora html -->

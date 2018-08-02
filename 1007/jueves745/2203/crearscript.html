@@ -1,0 +1,96 @@
+<html>
+<head>
+	<title> Calculadora Basica</title>
+	<h1> Calculadora</h1>
+	<script>
+	
+
+	function calcular(){
+
+		<!-- convertimos la cadena de caracteres del la caja de texto en un vector-->
+		nvector=calculadora.valor.value.split(" ");
+
+	alert(nvector);
+		<!--Buscamos la longitud del vector para realizar un recorrido con un maximo de iteraciones igual a la cantidad de elementos del Array-->
+		for(i=1;nvector.length>i;i++){
+				
+					if(nvector[i]=="*"){
+						var primnumero=i-1;
+						var segnumero=i+1;
+					rta=nvector[i-1]*nvector[i+1];
+					nvector[primnumero]=parseInt(rta);
+					nvector.splice(i, 2);
+					alert(nvector[primnumero]);
+					i=i-2;
+
+					}	
+				
+					if(nvector[i]=="/"){
+						var primnumero=i-1;
+						var segnumero=i+1;
+					rta=parseInt(nvector[i-1])/parseInt(nvector[i+1]);
+					nvector[primnumero]=rta;
+					nvector.splice(i, 2);
+					alert(nvector[primnumero]);
+					i=i-2;
+
+					}	
+		}
+		
+		for(i=1;nvector.length>i;i++){
+		
+				if(nvector[i]=="+"){
+						var primnumero=i-1;
+						var segnumero=i+1;
+					rta=parseInt(nvector[i-1])+parseInt(nvector[i+1]);
+					nvector[primnumero]=rta;
+					nvector.splice(i, 2);
+					alert(nvector[primnumero]);
+					i=i-2;
+				}
+
+				if(nvector[i]=="-"){
+						var primnumero=i-1;
+						var segnumero=i+1;
+					rta=parseInt(nvector[i-1])-parseInt(nvector[i+1]);
+					nvector[primnumero]=rta;
+					nvector.splice(i, 2);
+					alert(nvector[primnumero]);
+					i=i-2;
+
+				}	
+				
+		}
+          calculadora.valor.value=rta;
+	}      
+	</script>
+</head>
+<!-- Empieza codigo calculadora html-->
+  <form name="calculadora">
+    <p>Haz algun calculo para ver el resultado.</p>
+    <input type="textfield" name="valor" value="" disabled>
+    <br>
+    <input type="button" value="1" onClick="calculadora.valor.value+='1'">
+    <input type="button" value="2" onClick="calculadora.valor.value+='2'">
+    <input type="button" value="3" onClick="calculadora.valor.value+='3'">
+    <input type="button" value="+" onClick="calculadora.valor.value+=' + '">
+    <br>
+    <input type="button" value="4" onClick="calculadora.valor.value+='4'">
+    <input type="button" value="5" onClick="calculadora.valor.value+='5'">
+    <input type="button" value="6" onClick="calculadora.valor.value+='6'">
+    <input type="button" value="-" onClick="calculadora.valor.value+=' - '">
+    <br>
+    <input type="button" value="7" onClick="calculadora.valor.value+='7'">
+    <input type="button" value="8" onClick="calculadora.valor.value+='8'">
+    <input type="button" value="9" onClick="calculadora.valor.value+='9'">
+    <input type="button" value="*" onClick="calculadora.valor.value+=' * '">
+    <br>
+    <input type="button" value="0" onClick="calculadora.valor.value+='0'">
+    <input type="reset" value="c">
+    <input type="button" value="=" onClick="calcular()">
+    <input type="button" value="/" onClick="calculadora.valor.value+=' / '">
+    
+    </form>
+<!-- Finaliza codigo calculadora html -->
+
+</html>

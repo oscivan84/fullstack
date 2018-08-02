@@ -1,0 +1,55 @@
+body{
+    background: lightgray;
+}
+.calculadora{
+    background: lightgoldenrodyellow;
+    padding: 5px;
+    width: 170px;
+    border-color:blue ; 
+    border-width:1px ; 
+    border-style:groove;
+    border-radius: 15px 0px 15px 0px;
+    -moz-border-radius: 35px 0px 35px 0px;
+    -webkit-border-radius:9px 9px 9px 9px;
+    border: 2px ridge;
+    float: left;
+}
+.valor{
+    border-radius: 15px 0px 15px 0px;
+    -moz-border-radius: 35px 0px 35px 0px;
+    -webkit-border-radius:9px 0px 9px 0px;
+    border: 2px solid #5878ca;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color:lightcyan;
+}
+li {
+    padding: 3px;
+    float: left;
+}
+
+.numeros{
+    padding: 2px;
+    width: 163px;
+    margin: 2px;
+    border-radius: 15px 0px 15px 0px;
+    -moz-border-radius: 35px 0px 35px 0px;
+    -webkit-border-radius:9px 9px 9px 9px;
+    border: 2px ridge;
+}
+
+.numeros input{
+    padding: 7px 10px;
+}
+
+.caja .clear{
+    clear: both;
+}
+
+.explica{
+    background-color: lightcoral;
+}

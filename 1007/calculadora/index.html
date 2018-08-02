@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="css/estilo.css">
+    <script type="text/javascript" src="./jss/funcion.js"></script>
+    <title>CalculadoraJS</title>
+</head>
+<body>
+    <header>
+        <h1>Calculadora Javascript</h1>
+    </header>
+    <form name="calculadora">
+    <div class="calculadora">
+        <div><input type="text" class="valor" id="valor"></div>
+        <div class="numeros">
+            <div class="superiores">
+                <ul>
+                    <li> <input type="button" value="7" onClick="calculadora.valor.value+='7'">    </li>
+                    <li> <input type="button" value="8" onClick="calculadora.valor.value+='8'">    </li>
+                    <li> <input type="button" value="9" onClick="calculadora.valor.value+='9'"> </li>
+                    <li> <input type="button" value="*" onClick="calculadora.valor.value+=' * '">   </li>        
+                </ul>
+            </div>
+            <div class="medio">
+                <ul>
+                    <li> <input type="button" value="4" onClick="calculadora.valor.value+='4'">    </li>
+                    <li> <input type="button" value="5" onClick="calculadora.valor.value+='5'">    </li>
+                    <li> <input type="button" value="6" onClick="calculadora.valor.value+='6'"> </li>
+                    <li> <input type="button" value="/" onClick="calculadora.valor.value+=' / '">   </li>        
+                </ul>
+            </div>
+            <div class="inferior">
+                <ul>
+                    <li> <input type="button" value="1" onClick="calculadora.valor.value+='1'">    </li>
+                    <li> <input type="button" value="2" onClick="calculadora.valor.value+='2'">    </li>
+                    <li> <input type="button" value="3" onClick="calculadora.valor.value+='3'"> </li>
+                    <li> <input type="button" value="+" onClick="calculadora.valor.value+=' + '">   </li>        
+                </ul>            
+            </div>
+            <div class="base">
+                <ul>
+                    <li> <input type="button" value="C" onClick="limpiar()">   </li>        
+                    <li> <input type="button" value="0" onClick="calculadora.valor.value+='0'">    </li>
+                    <li> <input type="button" value="-" onClick="calculadora.valor.value+=' - '">    </li>
+                    <li> <input type="button" value="=" onClick="calcular()"> </li>
+                    
+                </ul>            
+            </div>
+        </div>
+        
+        
+        </div>
+
+        </div>
+    </div>
+    
+</form>
+</body>
+</html>

@@ -1,0 +1,22 @@
+.caja{
+    background: #F00;
+    padding: 5px;
+}
+.caja .centro{
+    height: 300px;
+    background: #ff9;
+    float: left;
+}
+.caja .izq{
+    height:100px;
+    width: 20%;
+    background-color: #CFC
+}
+.caja .dcha{
+    height: 50px;
+    width: 80%;
+    background-color: #CCF;
+}
+.caja .clear{
+    clear: both;
+}
